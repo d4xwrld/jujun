@@ -132,7 +132,7 @@ header {
   color: #19376d;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .hamburger {
     display: block;
   }
