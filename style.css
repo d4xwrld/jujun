@@ -132,7 +132,7 @@ header {
   color: #19376d;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   header {
     height: 8vh;
     padding: 20px 0;
