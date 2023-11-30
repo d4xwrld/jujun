@@ -60,7 +60,7 @@ html .wrapper {
 
 header {
   width: 100%;
-  height: 50px;
+  height: 40px;
   background: var(--background-main);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.5rem;
@@ -77,11 +77,11 @@ header {
   width: 70px;
   display: flex;
 }
-.logo p {
+/* .logo p {
   margin-bottom: 25%;
   margin-left: 20%;
   font-size: 140%;
-}
+} */
 
 .hamburger {
   display: none;
@@ -89,10 +89,10 @@ header {
 }
 
 .hamburger .line {
-  width: 30px;
-  height: 3px;
+  width: 40px;
+  height: 4px;
   background: #0b2447;
-  margin: 4px 0;
+  margin: 14px 0;
   margin-right: 40px;
 }
 
@@ -132,7 +132,18 @@ header {
   color: #19376d;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 8vh;
+    padding: 20px 0;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo span {
+    margin: 3rem;
+    font-size: 3rem;
+  }
   .hamburger {
     display: block;
   }
@@ -140,7 +151,7 @@ header {
   .nav-bar {
     height: 0;
     position: absolute;
-    top: 80px;
+    top: 90%;
     left: 0;
     right: 0;
     width: 100%;
@@ -161,6 +172,7 @@ header {
     display: block;
     width: fit-content;
     margin: 8px auto;
+    padding: 10px;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
@@ -173,6 +185,7 @@ header {
   }
 
   .nav-bar ul li a {
+    font-size: 3rem;
     margin-bottom: 12px;
     transform: translateY(-20px);
     opacity: 0;
@@ -211,11 +224,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 15px;
+  height: 80vh;
+  padding: 5%;
   margin-top: -100px;
   position: relative;
   top: 70px;
+  font-size: 2rem;
 }
 .main img {
   max-width: 100%;
@@ -227,14 +241,19 @@ header {
   text-align: justify;
   width: 100%;
   box-sizing: border-box;
+  font-size: 30px;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
   .main {
     flex-direction: row;
+    height: 60vh;
   }
   .des {
     max-width: 50%;
-    top: 0px;
+    top: -5vh;
+    font-size: 1.25rem;
+    margin: 5rem;
+    top: 5%;
   }
 }
 /* .des h1 {
@@ -302,7 +321,7 @@ padding-left: 17%;
 
 .swiper .swiper-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   margin: 0;
   position: relative;
 }
@@ -317,13 +336,14 @@ padding-left: 17%;
     display: grid;
     justify-items: center;
     align-items: center;
+    height: 50vh;
   }
 }
 
 .swiper .swiper-wrapper .swiper-slide .overlay {
   display: none;
   width: 100%;
-  height: 100%;
+  height: 25vh;
   background: #000;
   position: absolute;
   opacity: 0.2;
@@ -334,13 +354,16 @@ padding-left: 17%;
   .swiper .swiper-wrapper .swiper-slide .overlay {
     display: block;
     margin: 0;
+    height: 100vh;
   }
 }
 
 .swiper .swiper-wrapper .swiper-slide .swiper-image {
   position: relative;
+  background-size: auto;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
+  object-fit: fill;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -350,7 +373,7 @@ padding-left: 17%;
       0 6px 20px 0 rgba(0, 0, 0, 0.25);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
   }
 }
@@ -518,7 +541,7 @@ padding-left: 17%;
   transform: scale(1.2); /* Enlarge the image on hover */
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1280px) {
   .column {
     flex: 50%;
     max-width: 50%;
