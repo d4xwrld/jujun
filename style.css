@@ -77,11 +77,11 @@ header {
   width: 70px;
   display: flex;
 }
-/* .logo p {
+.logo p {
   margin-bottom: 25%;
   margin-left: 20%;
   font-size: 140%;
-} */
+}
 
 .hamburger {
   display: none;
@@ -132,7 +132,7 @@ header {
   color: #19376d;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
   header {
     height: 8vh;
     padding: 20px 0;
@@ -140,7 +140,7 @@ header {
   .logo img {
     display: none;
   }
-  .logo span {
+  .logo p {
     margin: 3rem;
     font-size: 3rem;
   }
