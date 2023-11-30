@@ -132,7 +132,7 @@ header {
   color: #19376d;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
   }
@@ -228,7 +228,7 @@ header {
   width: 100%;
   box-sizing: border-box;
 }
-@media (min-width: 980px) {
+@media (min-width: 768px) {
   .main {
     flex-direction: row;
   }
